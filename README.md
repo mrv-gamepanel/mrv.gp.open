@@ -51,7 +51,7 @@ more: ``https://www.hostinger.com/tutorials/how-to-install-and-use-linux-screen/
 ## [download]
 
 #### Download gamepanel from github using this command line:
-``wget https://github.com/mskoko/MRV-Hosting.com/archive/refs/heads/master.zip``
+``wget https://github.com/mrv-gamepanel/mrv.gp.open/archive/refs/heads/master.zip``
 
 
 ### [database config]
