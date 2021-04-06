@@ -1,4 +1,5 @@
-# MRV for Game Hosting # Site, Order, Online Payment, Game Panel, Admin Panel [Open Source]
+# MRV for Game Hosting [Open Source project] 
+## [Website, Order, Online Payment, Game Panel, Admin Panel]
 
 ### About us
 ``uskoro bato, no sikiriki``
