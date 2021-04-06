@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# mrv.gp.open
-=======
-# MRV-Hosting.com Site, Order, Payment, Game control panel [Open Source]
+# MRV for Game Hosting # Site, Order, Online Payment, Game Panel, Admin Panel [Open Source]
 
 ### About us
 ``uskoro bato, no sikiriki``
@@ -55,26 +52,6 @@ more: ``https://www.hostinger.com/tutorials/how-to-install-and-use-linux-screen/
 #### Download gamepanel from github using this command line:
 ``wget https://github.com/mskoko/MRV-Hosting.com/archive/refs/heads/master.zip``
 
-## [install]
-
-##### Unzip the contents to the folder of the same name. (make it)
-
-``Wherever you have a zipped file, unzip it to a folder that should be called as a zip.``
-
-#### User panel:
-``unzip core/inc/libs/libs.zip``
-
-``unzip assets/fontawesome.zip``
-
-``unzip assets/plugins.zip``
-
-#### Admin panel:
-``unzip admin/core.zip``
-
-``unzip admin/img.zip``
-
-``unzip admin/vendor.zip``
-
 
 ### [database config]
 config file: ``/core/inc/config.php``
@@ -84,11 +61,9 @@ config file: ``/core/inc/config.php``
 using this command line: ``sudo chmod -R 777 /var/www``
 
 
-### [game]
+### [setup game dirvers]
 ``https://linuxgsm.com/lgsm/sampserver/``
 
-
-## You developer? Please fork & fix bugs. <3
+#### You developer? Please fork and if found bugs fixed or report it. Thanks! <3
 
 ## Project for you guys, thanks for your time. <3
->>>>>>> 8589b5c... first commit
