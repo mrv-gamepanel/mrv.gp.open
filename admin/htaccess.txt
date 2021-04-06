@@ -1,0 +1,116 @@
+RewriteEngine On
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+#####Home page
+RewriteRule ^home$ 								"index.php"
+
+#####Login page
+RewriteRule ^login$ 							"login.php"
+
+#####Logout page
+RewriteRule ^logout$ 							"logout.php"
+
+#####Servers page
+RewriteRule ^servers$ 							"servers.php"
+
+#####Support page
+RewriteRule ^support$ 							"support.php"
+
+#####Ticket page
+RewriteRule ^ticket$ 							"ticket.php"
+
+#####Boxes page
+RewriteRule ^boxes$ 							"boxes.php"
+
+#####New server
+RewriteRule ^add_server$ 						"add_server.php"
+
+#####New Admin
+RewriteRule ^add_admin$ 						"add_admin.php"
+
+#####New User
+RewriteRule ^add_user$ 				    		"add_user.php"
+
+#####Server page
+RewriteRule ^server$ 							"server.php"
+
+#####FDL Info page
+RewriteRule ^fdl_view$ 							"fdl_view.php"
+
+#####Server Mods page
+RewriteRule ^smods$ 							"smods.php"
+
+#####Server Plugins page
+RewriteRule ^splugins$ 							"splugins.php"
+
+#####Server Maps page
+RewriteRule ^smaps$ 							"smaps.php"
+
+#####Settings page
+RewriteRule ^settings$ 							"settings.php"
+
+#####WebFTP page
+RewriteRule ^web_ftp$ 							"webftp.php"
+
+#####Console page
+RewriteRule ^console$ 							"console.php"
+
+#####Orders page
+RewriteRule ^orders$ 							"orders.php"
+
+#####Order page
+RewriteRule ^order$ 							"order.php"
+
+#####Box page
+RewriteRule ^box$    							"box.php"
+
+#####New Box
+RewriteRule ^add_box$ 							"add_box.php"
+
+#####Games page
+RewriteRule ^games$    							"games.php"
+
+#####New Game
+RewriteRule ^add_game$ 							"add_game.php"
+
+#####Game
+RewriteRule ^game$ 							    "game.php"
+
+#####Plugins page
+RewriteRule ^plugins$    						"plugins.php"
+
+#####New Plugin
+RewriteRule ^add_plugin$ 						"add_plugin.php"
+
+#####Plugin
+RewriteRule ^plugin$ 							"plugin.php"
+
+#####Mods page
+RewriteRule ^mods$    							"mods.php"
+
+#####New Mod
+RewriteRule ^add_mod$ 							"add_mod.php"
+
+#####Mod
+RewriteRule ^mod$ 							    "mod.php"
+
+#####User page
+RewriteRule ^user$    							"user.php"
+
+#####Users page
+RewriteRule ^users$    							"users.php"
+
+#####Admins
+RewriteRule ^admins$ 							"admins.php"
+
+#####Process
+RewriteRule ^process$ 							"process.php"
+
+
+#####Error page
+ErrorDocument 400     							"/error.php?err=400"
+ErrorDocument 401     							"/error.php?err=401"
+ErrorDocument 403     							"/error.php?err=403"
+ErrorDocument 404     							"/error.php?err=404"
+ErrorDocument 500     							"/error.php?err=500"

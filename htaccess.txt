@@ -1,0 +1,103 @@
+RewriteEngine On
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+#####Home page
+RewriteRule ^home$ 								"index.php"
+
+#####Login page
+RewriteRule ^login$ 							"login.php"
+
+#####Register page
+RewriteRule ^register$ 							"register.php"
+
+#####Logout page
+RewriteRule ^logout$ 							"logout.php"
+
+#####GP~Home page
+RewriteRule ^gp-home$ 							"gp-home.php"
+
+#####Billing page
+RewriteRule ^billing$ 							"billing.php"
+
+#####Order page
+RewriteRule ^order$ 							"order.php"
+
+#####New Order page
+RewriteRule ^neworder$ 							"neworder.php"
+
+#####Order page
+RewriteRule ^order$ 							"order.php"
+
+#####Install server page
+RewriteRule ^install$ 							"install.php"
+
+#####Servers page
+RewriteRule ^servers$ 							"servers.php"
+
+#####Server page
+RewriteRule ^server$ 							"server.php"
+
+#####Online Stats Server page
+RewriteRule ^online$ 							"online.php"
+
+#####Settings Server page
+RewriteRule ^settings$ 							"settings.php"
+
+#####Support page
+RewriteRule ^support$ 							"support.php"
+
+#####Ticket page
+RewriteRule ^ticket$ 							"ticket.php"
+
+#####Admins Server page
+RewriteRule ^admins$ 							"admins.php"
+
+#####WebFTP Server page
+RewriteRule ^web_ftp$ 							"web_ftp.php"
+
+#####Mods Server page
+RewriteRule ^mods$ 								"mods.php"
+
+#####Plugins Server page
+RewriteRule ^plugins$ 							"plugins.php"
+
+#####Console Server page
+RewriteRule ^console$ 							"console.php"
+
+#####MySQL Server page
+RewriteRule ^mysql$ 							"mysql.php"
+
+#####Autorestart
+RewriteRule ^autorestart$ 						"autorestart.php"
+
+#####Advertisements
+RewriteRule ^advertisements$ 					"advertisements.php"
+
+#####Contact
+RewriteRule ^contact$ 					        "contact.php"
+
+#####QnA
+RewriteRule ^qna$ 					            "qna.php"
+
+#####Profile
+RewriteRule ^profile$ 					        "profile.php"
+
+#####Process
+RewriteRule ^process$ 							"process.php"
+
+
+#####Error page
+ErrorDocument 400     							"/error.php?err=400"
+ErrorDocument 401     							"/error.php?err=401"
+ErrorDocument 403     							"/error.php?err=403"
+ErrorDocument 404     							"/error.php?err=404"
+ErrorDocument 500     							"/error.php?err=500"
+
+#####Anti Leak
+RewriteCond %{HTTP_USER_AGENT} ^HTTrack [OR]
+RewriteCond %{HTTP_USER_AGENT} ^SiteSucker [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebZip [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebCopier [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zeus
+RewriteRule ^.*$ no_download.html [L]

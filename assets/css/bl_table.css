@@ -1,0 +1,107 @@
+.blTbl {
+	padding: 5px 15px;
+}
+
+/* Bl Table Header */
+.blTableHead {
+	font-size: 13px;
+	font-weight: 700;
+	padding: 10px 15px;
+	color: rgb(67,67,67);
+}
+
+/* Bl Table header */
+.blTableHr {
+	border-bottom: 1px solid #333;
+	margin: 2px 15px 5px 15px;
+}
+/* st:2 */
+.blTableHrSt2 {
+	border-bottom: 1px solid #f1f1f1;
+	margin: 2px 15px 5px 15px;
+}
+.blTableHrSt3 {
+    border-bottom: 2px solid #f1f1f1;
+}
+
+/* Bl Table Body */
+#blTableBody {
+	width: 100%;
+	height: 165px;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+	/*background: #fff;*/
+	cursor: pointer;
+}
+/* st:2 */
+#blTableStyle2 {
+	width: 100%;
+	height: 165px;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+	/*background: #fff;*/
+	cursor: pointer;
+}
+/* Address */
+.addrTable.active {
+	font-weight: 600!important;
+    border: 1px solid #333;
+    margin: 0px;
+    padding: 5px 0;
+}
+/* Location */
+.locTable.active {
+	font-weight: 600!important;
+    margin: 0px;
+    padding: 5px 0;
+}
+/* SiteVist */
+.svTable.active {
+	font-weight: 600!important;
+    margin: 0px;
+    padding: 5px 0;
+}
+/* Other */
+.blTableOnBtn {
+	cursor: pointer;
+}
+.addrTable,
+.locTable,
+.svTable {
+	color: rgb(67,67,67)!important;
+}
+
+/* Scrollbar */
+#blTableBody::-webkit-scrollbar {
+	width: 10px;
+}
+#blTableBody::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+	border-radius: 25px;
+}
+#blTableBody::-webkit-scrollbar-thumb {
+	background: rgb(208,208,208); 
+	border-radius: 25px;
+}
+#blTableBody::-webkit-scrollbar-thumb:hover {
+	background: rgb(67,67,67);
+	border-radius: 25px;
+}
+/* BL:tbl2 */
+#blTableStyle2::-webkit-scrollbar {
+	width: 10px;
+}
+#blTableStyle2::-webkit-scrollbar-track {
+	background: rgb(208,208,208); 
+	border-radius: 25px;
+}
+#blTableStyle2::-webkit-scrollbar-thumb {
+	background: #f8f5f5; 
+	border-radius: 25px;
+}
+#blTableStyle2::-webkit-scrollbar-thumb:hover {
+	background: rgb(67,67,67);
+	border-radius: 25px;
+}
