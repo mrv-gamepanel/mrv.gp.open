@@ -44,7 +44,7 @@
 ``sudo apt-get install -y zip, unzip``
 
 #### screen
-install: ``sudo apt install screen``
+install: ``sudo apt-get install screen``
 
 more: ``https://www.hostinger.com/tutorials/how-to-install-and-use-linux-screen/``
 
