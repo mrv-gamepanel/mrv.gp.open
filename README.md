@@ -5,7 +5,7 @@
 ``uskoro bato, no sikiriki``
 
 #### Frontend: `Radisic` & `Gari`;
-#### Backend: `ME`;
+#### Backend: `mskoko.me`;
 
 
 ## Ubuntu 18.04 +
@@ -105,7 +105,7 @@ config file: ``/core/inc/config.php``
 #### [phpmyadmin]
 	sudo yum install phpmyadmin
 
-
+# Tutorial: https://youtu.be/pHhaKXwo918
 
 
 #### You developer? Please fork and if found bugs fixed or report it. Thanks! <3
