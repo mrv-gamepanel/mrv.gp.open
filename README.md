@@ -97,12 +97,10 @@ config file: ``/core/inc/config.php``
 #### [--]
 	yum install -y screen, zip, unzip
 
-
 #### [db server]
 	sudo yum install mariadb-server
 	sudo systemctl start mariadb.service
 	sudo mysql_secure_installation
-
 
 #### [phpmyadmin]
 	sudo yum install phpmyadmin
