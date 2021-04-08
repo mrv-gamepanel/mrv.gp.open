@@ -94,6 +94,9 @@ config file: ``/core/inc/config.php``
 	service httpd restart
 (https://www.svnlabs.com/blogs/install-ssh2-extension-for-php-7-on-centos-7/)
 
+#### [--]
+	yum install -y screen, zip, unzip
+
 
 #### [db server]
 	sudo yum install mariadb-server
