@@ -8,47 +8,49 @@
 #### Backend: `ME`;
 
 
-## [sys config]
-#### apache2
-	Web server (apache2): https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04
-	Install php-ssh2 extension:
-		sudo apt-get update -y
-		sudo apt-get install -y php-ssh2
+## Ubuntu 18.04 +
 
-	Enable .htaccess:
+#### Update & Upgrade!
+	sudo apt-get update -y
+
+#### [install web server]
+
+
+#### [install php]
+	sudo apt install software-properties-common
+	sudo add-apt-repository ppa:ondrej/php
+	sudo apt install -y php7.3
+	sudo apt-get install -y php-ssh2
+
+#### enable [.htaccess]
 		sudo a2enmod rewrite
 		sudo systemctl restart apache2
 		sudo nano /etc/apache2/apache2.conf
-		scroll to down: <Directory /var/www/> &
-		replace this line: AllowOverride None to AllowOverride All
+		---------------------------------------
+		scroll to down:
+			<Directory /var/www/> &
+		replace this line:
+			AllowOverride None |> AllowOverride All
 
-#### mariadb & phpmyadmin
-	Database (MariaDB) & phpmyadmin: https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04
-	For fix problem "Not found" with phpmyadmin: https://stackoverflow.com/a/46151947
-	For problem with root login: https://stackoverflow.com/a/52382478
 
-#### proftpd
-	install: sudo apt-get install -y proftpd
-	start: 	systemctl start proftpd
-	enable: systemctl enable proftpd
-	status: systemctl status proftpd
 
-	chnage:
-		from:	#DefaultRoot ~
-		to: 	DefaultRoot ~
-		( remove "#" )
+#### [db server & phpmyadmin]
+	Database (MariaDB) & phpmyadmin:
+		(https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04)
+	For fix problem "Not found" with phpmyadmin:
+		(https://stackoverflow.com/a/46151947)
+	For problem with root login:
+		(https://stackoverflow.com/a/52382478)
 
-	more settings: https://mxforge.com/linux-windows/install-proftpd-with-tls-on-ubuntu-20-04-lts/
+#### [proftpd]
+	sudo apt-get install -y proftpd
+	more settings:
+		(https://mxforge.com/linux-windows/install-proftpd-with-tls-on-ubuntu-20-04-lts/)
 
-#### zip, unzip
-``sudo apt-get install -y zip, unzip``
+#### zip, unzip, screen
+``sudo apt-get install -y zip, unzip, screen``
 
-#### screen
-install: ``sudo apt-get install screen``
 
-more: ``https://www.hostinger.com/tutorials/how-to-install-and-use-linux-screen/``
-
-## [download]
 
 #### Download gamepanel from github using this command line:
 ``wget https://github.com/mrv-gamepanel/mrv.gp.open/archive/refs/heads/master.zip``
@@ -71,7 +73,7 @@ using this command line: ``sudo chmod -R 777 /var/www``
 
 ## CentOS 7+
 
-#### install web server]
+#### [install web server]
 	sudo yum install httpd
 	sudo chmod -R 777 /var/www
 
