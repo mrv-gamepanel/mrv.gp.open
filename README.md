@@ -13,11 +13,11 @@
 #### Update & Upgrade!
 	sudo apt-get update -y
 
-#### [install web server]
+#### [web server]
 	sudo apt-get install -y apache2
 	sudo chmod -R 777 /var/www
 
-#### [install php]
+#### [php]
 	sudo apt install software-properties-common
 	sudo add-apt-repository ppa:ondrej/php
 	sudo apt install -y php7.3
@@ -64,11 +64,11 @@ config file: ``/core/inc/config.php``
 
 ## CentOS 7+
 
-#### [install web server]
+#### [web server]
 	sudo yum install httpd
 	sudo chmod -R 777 /var/www
 
-#### [install php]
+#### [php]
 	sudo install php
 	yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 	yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
