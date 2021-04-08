@@ -14,7 +14,8 @@
 	sudo apt-get update -y
 
 #### [install web server]
-
+	sudo apt-get install -y apache2
+	sudo chmod -R 777 /var/www
 
 #### [install php]
 	sudo apt install software-properties-common
@@ -32,8 +33,6 @@
 		replace this line:
 			AllowOverride None |> AllowOverride All
 
-
-
 #### [db server & phpmyadmin]
 	Database (MariaDB) & phpmyadmin:
 		(https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04)
@@ -50,19 +49,11 @@
 #### zip, unzip, screen
 ``sudo apt-get install -y zip, unzip, screen``
 
-
-
 #### Download gamepanel from github using this command line:
 ``wget https://github.com/mrv-gamepanel/mrv.gp.open/archive/refs/heads/master.zip``
 
-
 ### [database config]
 config file: ``/core/inc/config.php``
-
-
-### [upload problem fix]
-using this command line: ``sudo chmod -R 777 /var/www``
-
 
 ### [setup game dirvers]
 ``https://linuxgsm.com/lgsm/sampserver/``
